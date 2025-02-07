@@ -72,9 +72,9 @@ article >p  {
 
 ul {
     background-color:cornflowerblue;
-    /* flexbox 사용 */
     width : 100%;
     height : 80px;
+    /* flexbox 사용 */
     display: flex;
     flex-direction: row;
     justify-content:right;

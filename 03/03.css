@@ -1,0 +1,139 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    width: 100%;
+    /* margin-left : 10%; */
+    background-color: rgb(218, 246, 255);
+    background-size: cover;
+}
+
+@media only screen and (max-width : 1024px) {
+
+    header, main, footer {
+        width: 100%;
+        background-color: rgb(255, 218, 235);
+        padding: 10px;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header>nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+nav li {
+    display: inline;
+    /* inline하면 글자크기만큼 잡힘 */
+    padding: 5px 10px;
+    background-color: cornflowerblue;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+a {
+    width: 100%;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    color: white;
+}
+
+li:hover,
+li:hover {
+    background-color: blue;
+}
+
+
+
+
+main>article {
+    padding: 10px 50px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    font-family: "Noto Sans KR", serif;
+    margin: 10px;
+}
+
+article>span {
+    font-family: "Noto Sans KR", serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+section {
+    margin: 20px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    font-family: "Noto Sans KR", serif;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+section div {
+    display: flex;
+    align-items: center;
+}
+
+section span {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: lighter;
+}
+
+section img {
+    border-radius: 50%;
+}
+
+footer {
+    padding: 25px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Noto Sans KR", serif;
+    font-weight: lighter;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
