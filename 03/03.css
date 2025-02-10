@@ -8,7 +8,7 @@ header, main, footer {
     width: 100%;
     /* margin-left : 10%; */
     background-color: rgb(218, 246, 255);
-    background-size: cover;
+    padding: 10px;
 }
 
 @media only screen and (max-width : 1024px) {
@@ -126,8 +126,6 @@ footer {
     padding: 25px;
     background-color: black;
     color: white;
-    display: flex;
-    align-items: center;
     font-size: 15px;
     font-family: "Noto Sans KR", serif;
     font-weight: lighter;

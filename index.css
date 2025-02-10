@@ -1,0 +1,90 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+main{
+    width:80%;
+    margin-left: 10%;
+    padding: 20px;
+    border: 0px solid gray;
+    /* solid는 실선 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, nav, article{
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+nav, article{
+    padding: 40px;
+}
+
+nav{
+    border: 1px solid gray;
+}
+
+h1{
+    height: 80px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    /* flexbox 만들필요xx */
+}
+
+nav li {
+    padding: 5px 15px;
+    /* 위아래 5px, 양옆 15px */
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border: 1px dotted gray;
+    text-align: center;
+}
+
+nav li:hover{
+    background-color: beige;
+}
+
+article{
+    display: flex;
+    justify-content: end;
+}
+
+article li{ 
+    display : inline-flex;
+    padding: 5px;
+    background-color: rgb(78, 46, 10);
+    color: white;
+    border-radius: 5px;
+}
+
+ul>li:hover{
+    background-color: beige;
+}
+
+#bt1{
+    background-color: brown;
+}
+
+#bt1:hover{
+    background-color: beige;
+}
+
+ul > li{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+article a:link, article a:visited, article a:hover{
+    color: white;
+}
