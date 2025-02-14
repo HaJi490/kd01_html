@@ -19,12 +19,20 @@ function lotto(){
 
         if(!arrLotto.includes(n)) arrLotto.push(n);
     }
+    arrLotto.splice(6, 0, '+');
     console.log(arrLotto); 
-
-    let spanTgs = arrLotto.map(item => `<span>${item}</span>`).join('');
+    
+    let spanTgs = arrLotto.map(item => 
+        item == '+' ? `<span id ='spplus'>${item}</span>`
+        :`<span class='sp${Math.floor(item / 10)}'>${item}</span>`).join('');     //spnTgs 변수를 만들어서 변수를 통해 spantgs를 추가함
+    
     console.log(spanTgs);
-    document.getElementById("msg").innerHTML = spanTgs ;
+    document.getElementById("msgLotto").innerHTML = spanTgs ;
+    
+    
 }
+
+
 
 // // 1. 1~10 무작위 숫자생성
 // let arrRand = [] ;

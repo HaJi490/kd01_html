@@ -47,11 +47,11 @@ for(let i of arr){
 }
 
 console.log("of 반복2");
-for(let i of arr.entries()){     
+for(let i of arr.entries()){         //entries() 메서드 : [인덱스, 값]    
     console.log(i);
 }
 //구조 분해 할당
-for(let [i, item] of arr.entries()){    //entries() 메서드 : [인덱스, 값]        
+for(let [i, item] of arr.entries()){        
     console.log(i, item);               //i = 인덱스, item = 변수
 }
 
@@ -65,8 +65,7 @@ arr.forEach((item, i)=>{        //item값 > 키  //()=>{} 콜백함수
 //map()
 console.log("map 메소드");
 arr = arr.map((item)=>{           //꼭 arr일 필요x, 새로운 변수선언가능
-    console.log(item);          //??왜 생략된거
-
+    console.log(item);          //??왜 생략된거 >> 생략하면 그냥 콘솔창에 안뜨게 하는거
     return item * 2;
 }); 
 console.log(arr);    
@@ -82,8 +81,8 @@ console.log(arrMap);
 
 //filter()
 console.log("filter 메소드");
-let arrFilter = arr.filter((item)=>{           
-    console.log(item);
+let arrFilter = arr.filter((item)=>{                    
+    console.log(item);                      //언제부터 변수가 2,4,6,8,10??
 
     return item % 2 ==0;
 }); 
