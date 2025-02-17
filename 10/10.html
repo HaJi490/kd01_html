@@ -24,32 +24,34 @@
 <body>
     <main>
         <header>
-            <h1>자바스크립트 주사위게임</h1>
+            <h1>자바스크립트 단위환산</h1>
             <a href="../index.html"><i class="fa-solid fa-house"></i></a>
         </header>
         <section>
-            <div class="unit"></div>
-            <div class="unitDiv">
-                <select id="sel1">
-                    <option value = "℃" selected>섭씨온도(℃)</option>
-                    <option value = "℉">화씨온도(℉)</option>
-                </select>
-                <select id="sel2">
-                    <option value = "℃">섭씨온도(℃)</option>
-                    <option value = "℉" selected>화씨온도(℉)</option>
-                </select>
+            <div class="unit">
+                <div class="unitDiv">
+                    <!-- 폼태그  select > option 필요-->
+                    <select id="sel1" name="sel1">
+                        <option value="℃" selected>섭씨온도(℃)</option>
+                        <option value="℉">화씨온도(℉)</option>
+                    </select>
+                    <select id="sel2" name = "sel2">
+                        <option value="℃">섭씨온도(℃)</option>
+                        <option value="℉" selected>화씨온도(℉)</option>
+                    </select>
+                </div>
+                <div class="unitDiv">
+                    <div>
+                        <!-- 폼태그  input-->
+                        <input type="number" id="txt1" name="txt1">
+                        <span id="sp1">℃</span>
+                    </div>
+                    <div>
+                        <input type="number" id="txt2" name="txt2" readonly>
+                        <span id="sp2">℉</span>
+                    </div>
+                </div>
             </div>
-            <div class="unitDiv">
-                <div>
-                <input type="text" id="txt1" name="txt1">
-                <span id="sp1">℃</span>
-            </div>
-            <div>
-                <input type="text" id="txt2" name="txt2" readonly>
-                <span id="sp2">℉</span>
-            </div>
-            </div>
-        </div>
         </section>
     </main>
 </body>
