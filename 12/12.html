@@ -7,8 +7,8 @@
     <!-- 외부스타일/ 스타일시트 여러개 가능 -->
     <link rel="stylesheet" type="text/css" href="../index.css">
     <link rel="stylesheet" type="text/css" href="../js.css">
-    <link rel="stylesheet" type="text/css" href="./11.css">
- 
+    <link rel="stylesheet" type="text/css" href="./12.css">
+
     <!-- 웹아이콘 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -16,24 +16,37 @@
     <title>KD01 JS</title>
 
     <!-- 외부 자바스크립트 -->
-    <script src="./11.js"></script>
+    <script src="./12.js"></script>
 </head>
 
 <body>
     <main>
         <header>
-            <h1>자바스크립트 업다운게임</h1>
+            <h1>자바스크립트 폭탄게임</h1>
             <a href="../index.html"><i class="fa-solid fa-house"></i></a>
         </header>
         <section>
-            <div>
-            <img src = '../img/img/what.png' alt="업다운 what">
-        </div>
-        <!-- form을 사용하면 그안에서 돌게됨 -->
-        <form id="in">
-            <input type = 'number'> 
-            <button>확인</button>
-        </form>
+            <div class="row">
+            <div id="msg">폭탄을 섞어주세요</div>
+            </div>
+            <div class="row">
+                <div class=col></div>
+                <div class=col></div>
+                <div class=col></div>
+            </div>
+            <div class="row">
+                <div class=col></div>
+                <div class=col></div>
+                <div class=col></div>
+            </div>
+            <div class="row">
+                <div class=col></div>
+                <div class=col></div>
+                <div class=col></div>
+            </div>
+            <div class="row">
+                <button>폭탄섞기</button>
+            </div>
         </section>
     </main>
 </body>
