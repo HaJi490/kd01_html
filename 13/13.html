@@ -27,9 +27,18 @@
         </header>
         <form>
             <input type="date" id="dt" name="dt">
+            <fieldset>
+                <!-- <legend>영화별 조회</legend> -->
+                <label><input type="radio" name="mvType" id="myType1" value="K">한국영화</label>
+                <input type="radio" name="mvType"  id="myType2" value="F"><label for="mvType2">외국영화</label>
+                <input type="radio" name="mvType"  id="myType3" value="D" checked><label for="mvType3">전체</label> 
+                <!-- label 이름눌러도 radio선택 / input을 안묶으면 'for="id값"줘야함 / checked는 디폴트지정 -->
+            </fieldset>
+            <button>조회</button>
         </form>
-        <section>
-            <div>
+        <section id="mv">
+            <div id="mvPoster"></div>
+            <div id="mvList"></div>
                 <ul></ul>
             </div>
             

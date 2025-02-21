@@ -64,9 +64,9 @@ article li{
     border-radius: 5px;
 }
 
-ul>li:hover{
+/* ul>li:hover{
     background-color: beige;
-}
+} */
 
 #bt1{
     background-color: brown;
